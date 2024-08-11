@@ -44,6 +44,7 @@ int f_knapsack(vector<weights>arr,int capacity){
         }
         cout<<"Capacity Remained:"<<rem<<", Profit:"<<profit<<endl;
     }
+    return profit;
 }
 
 int main(){
@@ -90,5 +91,8 @@ INPUT
 60
 
 OP
-profit :66
+profit :95
+
+
+
 */
