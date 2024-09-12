@@ -6,6 +6,7 @@ tempCodeRunnerFile.*
 temp 
 *.o
 a
+.ipynb_checkpoints
 *.class
 .env
 LP3-DAA/LP 3 DAA lab manual with code.docx
