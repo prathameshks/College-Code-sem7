@@ -1,0 +1,20 @@
+2023-10-02 08:05:23 localhost sshd[1234]: Accepted publickey for user1 from 192.168.1.100 port 52413 ssh2: RSA SHA256:abcdefghijklmnopqrstuvwxyz123456
+2023-10-02 08:10:45 localhost sudo:  user1 : TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/apt update
+2023-10-02 08:30:12 localhost sshd[2345]: Failed password for invalid user admin from 10.0.0.50 port 55678 ssh2
+2023-10-02 09:00:30 localhost sshd[3456]: Accepted password for user2 from 172.16.0.25 port 59876 ssh2
+2023-10-02 09:15:45 localhost sudo:  user2 : TTY=pts/1 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/systemctl restart apache2
+2023-10-02 10:00:01 localhost sshd[4567]: Failed password for root from 192.168.1.200 port 60123 ssh2
+2023-10-02 10:30:23 localhost su[5678]: Successful su for user3 by root
+2023-10-02 11:00:45 localhost sshd[6789]: Disconnected from invalid user test 45.67.89.123 port 52413
+2023-10-02 11:30:12 localhost sudo:  user1 : TTY=pts/2 ; PWD=/opt/myapp ; USER=root ; COMMAND=/usr/bin/docker-compose up -d
+2023-10-02 12:00:30 localhost sshd[7890]: Failed password for user2 from 10.0.0.100 port 54321 ssh2
+2023-10-02 12:15:45 localhost su[8901]: FAILED su for user3 by user1
+2023-10-02 13:00:01 localhost sshd[9012]: Accepted publickey for user4 from 192.168.1.150 port 56789 ssh2: ED25519 SHA256:zyxwvutsrqponmlkjihgfedcba654321
+2023-10-02 13:30:23 localhost sudo:  user4 : TTY=pts/3 ; PWD=/home/user4 ; USER=root ; COMMAND=/usr/sbin/iptables -L
+2023-10-02 14:00:45 localhost sshd[1234]: Failed password for invalid user manager from 10.1.1.100 port 58901 ssh2
+2023-10-02 14:30:12 localhost su[2345]: Successful su for user1 by user2
+2023-10-02 15:00:30 localhost sshd[3456]: Received disconnect from 192.168.1.200 port 60123:11: Bye Bye [preauth]
+2023-10-02 15:15:45 localhost sudo:  user3 : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/user3 ; USER=root ; COMMAND=/bin/bash
+2023-10-02 16:00:01 localhost sshd[4567]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.100  user=user2
+2023-10-02 16:30:23 localhost su[5678]: FAILED su for root by user3
+2023-10-02 17:00:45 localhost sshd[6789]: Accepted password for user1 from 172.16.0.50 port 62345 ssh2

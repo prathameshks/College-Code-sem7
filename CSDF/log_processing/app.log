@@ -1,0 +1,31 @@
+2023-10-02 08:00:00 [INFO] Application started
+2023-10-02 08:05:15 [DEBUG] Connection pool initialized with 10 connections
+2023-10-02 08:30:30 [INFO] User 'john_doe' logged in successfully
+2023-10-02 09:00:45 [WARN] High CPU usage detected: 85%
+2023-10-02 09:15:00 [ERROR] Database connection failed: Connection timed out
+2023-10-02 09:15:05 [INFO] Attempting database reconnection (1/3)
+2023-10-02 09:15:10 [INFO] Database connection re-established
+2023-10-02 10:00:00 [INFO] Scheduled maintenance started
+2023-10-02 10:30:15 [DEBUG] Cache cleared successfully
+2023-10-02 11:00:30 [INFO] Scheduled maintenance completed
+2023-10-02 11:30:45 [WARN] Disk usage exceeds 80% on /dev/sda1
+2023-10-02 12:00:00 [INFO] Backup process initiated
+2023-10-02 12:15:20 [ERROR] Backup failed: Insufficient disk space
+2023-10-02 12:15:25 [INFO] Cleanup routine started to free up disk space
+2023-10-02 12:30:00 [INFO] Cleanup completed, 5GB freed
+2023-10-02 12:30:05 [INFO] Retry backup process
+2023-10-02 13:00:10 [INFO] Backup completed successfully
+2023-10-02 13:30:25 [DEBUG] Memory usage: 6.5GB / 8GB
+2023-10-02 14:00:40 [INFO] User 'jane_smith' logged in successfully
+2023-10-02 14:15:55 [WARN] Failed login attempt for user 'admin' from IP 192.168.1.100
+2023-10-02 14:16:00 [WARN] Failed login attempt for user 'admin' from IP 192.168.1.100
+2023-10-02 14:16:05 [WARN] Failed login attempt for user 'admin' from IP 192.168.1.100
+2023-10-02 14:16:10 [ERROR] User 'admin' account locked due to multiple failed login attempts
+2023-10-02 15:00:00 [INFO] Daily report generation started
+2023-10-02 15:30:15 [DEBUG] API request received: GET /api/v1/users
+2023-10-02 15:30:16 [DEBUG] API response sent: 200 OK (2ms)
+2023-10-02 16:00:30 [INFO] Daily report generation completed
+2023-10-02 16:30:45 [WARN] Unusual traffic spike detected: 5000 requests/second
+2023-10-02 16:31:00 [INFO] Auto-scaling triggered: Launching additional server instance
+2023-10-02 17:00:00 [INFO] New server instance online and added to load balancer
+2023-10-02 17:30:15 [DEBUG] Background job queue: 150 tasks pending

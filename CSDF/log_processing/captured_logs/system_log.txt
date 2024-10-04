@@ -1,0 +1,2 @@
+2024-10-02 23:51:47 [INFO] System started
+2024-10-02 23:51:47 [ERROR] Disk space low

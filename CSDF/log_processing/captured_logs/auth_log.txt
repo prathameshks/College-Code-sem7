@@ -1,0 +1,2 @@
+2024-10-02 23:51:47 [INFO] User login successful
+2024-10-02 23:51:47 [WARN] Failed login attempt

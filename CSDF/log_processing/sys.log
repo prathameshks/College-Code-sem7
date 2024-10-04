@@ -1,0 +1,22 @@
+2023-10-02 08:00:01 localhost kernel: [    0.000000] Linux version 5.15.0-1023-aws
+2023-10-02 08:00:02 localhost systemd[1]: Started System Logging Service.
+2023-10-02 08:15:23 localhost kernel: [   15.234567] CPU0: Core temperature above threshold, cpu clock throttled
+2023-10-02 08:30:45 localhost kernel: [   30.456789] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+2023-10-02 09:00:00 localhost CRON[1234]: (root) CMD (/usr/lib/systemd/systemd-tmpfiles --clean)
+2023-10-02 09:15:12 localhost kernel: [   75.123456] usb 1-1: New USB device found, idVendor=abcd, idProduct=1234
+2023-10-02 10:00:03 localhost kernel: [  120.234567] CPU0: Core temperature/speed normal
+2023-10-02 10:30:00 localhost CRON[2345]: (root) CMD (/opt/scripts/backup.sh)
+2023-10-02 11:00:01 localhost kernel: [  180.345678] EXT4-fs (sda1): Unaligned AIO/DIO on inode 12345 by mysqld; performance will be poor.
+2023-10-02 11:30:15 localhost systemd[1]: Starting Daily apt download activities...
+2023-10-02 12:00:00 localhost CRON[3456]: (root) CMD (/usr/bin/apt-get update)
+2023-10-02 12:15:30 localhost kernel: [  255.456789] TCP: request_sock_TCP: Possible SYN flooding on port 80. Sending cookies.
+2023-10-02 13:00:02 localhost systemd[1]: Started Daily apt download activities.
+2023-10-02 13:30:45 localhost kernel: [  330.567890] Out of memory: Kill process 4567 (java) score 256 or sacrifice child
+2023-10-02 14:00:00 localhost CRON[5678]: (www-data) CMD (/opt/myapp/cleanup.sh)
+2023-10-02 14:15:23 localhost kernel: [  375.678901] CPU1: Package temperature above threshold, cpu clock throttled
+2023-10-02 15:00:01 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+2023-10-02 15:30:30 localhost kernel: [  450.789012] perf: interrupt took too long (3132 > 3127), lowering kernel.perf_event_max_sample_rate to 63750
+2023-10-02 16:00:00 localhost CRON[6789]: (root) CMD (/usr/bin/apt-get upgrade -y)
+2023-10-02 16:15:45 localhost kernel: [  495.890123] CPU1: Package temperature/speed normal
+2023-10-02 17:00:02 localhost systemd[1]: Finished Daily apt upgrade and clean activities.
+2023-10-02 17:30:15 localhost kernel: [  570.901234] EXT4-fs error (device sda1): ext4_find_entry:1463: inode #7890: comm find: reading directory lblock 0
