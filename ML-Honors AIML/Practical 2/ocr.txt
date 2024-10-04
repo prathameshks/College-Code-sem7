@@ -1,0 +1,26 @@
+handful of type fonts and page formats. Proportionally spaced type (which includes virtually
+all typeset copy), laser printer fonts, and even many non-proportional typewriter fonts, have
+remained beyond the reach of these systems. And as a result, conventional OCR has never
+achieved more than a marginal impact on the total number of documents needing conversion
+into digital form.
+
+SCANNED
+Bocuments.
+
+4 1m
+—
+gs Text DATA BASE
+
+Documents
+CS
+
+maces |p 5]
+ASU
+
+PDF
+Documents
+
+Optical Character Recognition remains a challenging problem when text occurs in
+unconstrained environments, like natural scenes, due to geometrical distortions, complex
+backgrounds, and diverse fonts. The technology still holds an immense potential due to the
+various use-cases of deep learning based OCR like :
