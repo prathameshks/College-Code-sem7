@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis Results</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-secondary text-white">
+                <h2 class="text-center">Image Analysis Results</h2>
+            </div>
+            <div class="card-body">
+                <div class="d-flex row">
+                    <div class="col-md-6">
+                        <h4>Uploaded Image</h4>
+                        <!-- <a target="_blank" href="{{ url_for('uploaded_file', filename=filename) }}" class="btn btn-primary w-100">Open the Image</a> -->
+                        <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="{{ filename }}"
+                            class="w-100 h-auto">
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <!-- Image File Information -->
+                        <h4>File Information</h4>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Filename</th>
+                                <td>{{ filename }}</td>
+                            </tr>
+                            <tr>
+                                <th>MD5 Hash</th>
+                                <td>{{ md5_hash }}</td>
+                            </tr>
+                            <tr>
+                                <th>SHA-1 Hash</th>
+                                <td>{{ sha1_hash }}</td>
+                            </tr>
+                            <tr>
+                                <th>File Format</th>
+                                <td>{{ file_format }}</td>
+                            </tr>
+                            <tr>
+                                <th>File Size</th>
+                                <td>{{ file_size }} bytes</td>
+                            </tr>
+                            <tr>
+                                <th>Content Type</th>
+                                <td>{{ content_type }}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <!-- Metadata Section -->
+                        <h4>Metadata</h4>
+                        <ul class="list-group mb-3">
+                            {% for key, value in metadata.items() %}
+                            <li class="list-group-item">
+                                <strong>{{ key }}:</strong> {{ value }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <!-- Chain of Custody Section -->
+                        <h4>Chain of Custody</h4>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Upload Time</th>
+                                <td>{{ chain_of_custody.upload_time }}</td>
+                            </tr>
+                            <tr>
+                                <th>MD5 Hash</th>
+                                <td>{{ chain_of_custody.md5_hash }}</td>
+                            </tr>
+                            <tr>
+                                <th>SHA-1 Hash</th>
+                                <td>{{ chain_of_custody.sha1_hash }}</td>
+                            </tr>
+                            <tr>
+                                <th>File Format</th>
+                                <td>{{ chain_of_custody.file_format }}</td>
+                            </tr>
+                            <tr>
+                                <th>File Size</th>
+                                <td>{{ chain_of_custody.file_size }} bytes</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <!-- Download Link -->
+                <a target="_blank" href="{{ url_for('uploaded_file', filename=filename) }}"
+                    class="btn btn-primary w-20">Open the Image</a>
+                    <a href="/" class="btn btn-primary w-20">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
