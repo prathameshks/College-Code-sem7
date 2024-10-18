@@ -75,6 +75,10 @@ def update_chain_of_custody(filename, md5_hash, sha1_hash, file_format, file_siz
 def index():
     return render_template('index.html')
 
+@app.route('/error')
+def error():
+    return render_template('error.html')
+
 @app.route('/upload', methods=['POST'])
 def upload_image():
     if 'imagefile' not in request.files:
@@ -91,8 +95,12 @@ def upload_image():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
         
-        # File format analysis
-        file_format, file_size = file_format_analysis(file_path)
+        try:
+            # File format analysis
+            file_format, file_size = file_format_analysis(file_path)
+        except Exception as e:
+            flash(f"Error: {str(e)}")
+            return redirect("/error")
         
         # Extract metadata, hash values, and image content analysis
         md5_hash, sha1_hash = calculate_hash(file_path)
